@@ -1,4 +1,5 @@
 using System; 
+using LibrarySys;
 
 public class Program {
     #region Lib Responses.
@@ -8,11 +9,11 @@ public class Program {
     public const string MENU_OPT_3 = "3) List all books in the library";
     public const string MENU_OPT_4 = "4) Borrow a book";
     public const string MENU_OPT_5 = "5) Exit";
-    public const string MENU_FOOTER = ">> Enter choice(1–5) :";
+    public const string MENU_FOOTER = ">> Enter choice(1ï¿½5) :";
     private const string INVALID_INPUT = "Invalid Input, Please Try Again.";
     #endregion
 
-    public static LibrarySystem.Library lib = new LibrarySystem.Library();
+    public static Library lib = new Library();
     public static Dictionary<int, MenuAction> menuActions = new Dictionary<int, MenuAction>();
     public static List<int> borrowedIDs = new List<int>();
     public static bool applicationExit = false;
